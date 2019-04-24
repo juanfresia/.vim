@@ -26,7 +26,7 @@ set relativenumber
 
 " Set text width and no visual wrapping
 "" format by selecting and gq
-set textwidth=80
+" set textwidth=80
 set nowrap
 
 " Turn on spellcheck
@@ -38,6 +38,13 @@ map <F7> :tabp<CR>
 map <F8> :tabn<CR>
 
 " Show command
+set showcmd
+
+" Recognize Markdown files
+autocmd BufNewFile,BufRead *.md set filetype=markdown
+
+" Enable auto-wrapping for markdown
+autocmd FileType markdown setlocal textwidth=80
 
 " Configure tabs behavior per file type
 set tabstop=4
@@ -45,8 +52,8 @@ set expandtab
 set shiftwidth=4    " indentation is 4 spaces wide
 set softtabstop=4   " backspace treats 4 spaces like tab
 
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-autocmd FileType go setlocal tabstop=2 shiftwidth=2 softtabstop=2 noexpandtab
+autocmd FileType go setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
