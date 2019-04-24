@@ -46,6 +46,10 @@ autocmd BufNewFile,BufRead *.md set filetype=markdown
 " Enable auto-wrapping for markdown
 autocmd FileType markdown setlocal textwidth=80
 
+" File browser plugin
+let g:netrw_banner=0    " Hide top banner
+let g:netrw_liststyle=3 " Tree view
+
 " Configure tabs behavior per file type
 set tabstop=4
 set expandtab
