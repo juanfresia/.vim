@@ -24,6 +24,10 @@ set showcmd     " Show partial commands
 set number
 set relativenumber
 
+" Sane splitting
+set splitbelow
+set splitright
+
 " Set text width and no visual wrapping
 "" format by selecting and gq
 " set textwidth=80
