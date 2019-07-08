@@ -1,7 +1,7 @@
 colo PaperColor
 
 " Magic for tmux
-set background=light
+set background=dark
 set t_Co=256
 
 filetype plugin indent on
