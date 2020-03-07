@@ -1,7 +1,7 @@
 colo PaperColor
 
 " Magic for tmux
-set background=dark
+set background=light
 set t_Co=256
 
 filetype plugin indent on
@@ -35,7 +35,7 @@ set nowrap
 
 " Turn on spellcheck
 set spelllang=en
-set spell
+set nospell
 
 " Move between tabs with F7 and F8
 map <F7> :tabp<CR>
