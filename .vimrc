@@ -1,7 +1,7 @@
 colo PaperColor
 
 " Magic for tmux
-set background=light
+set background=dark
 set t_Co=256
 
 filetype plugin indent on
@@ -43,6 +43,9 @@ map <F8> :tabn<CR>
 
 " Show command
 set showcmd
+
+" Sane backspace
+set backspace=indent,eol,start
 
 " Recognize Markdown files
 autocmd BufNewFile,BufRead *.md set filetype=markdown
